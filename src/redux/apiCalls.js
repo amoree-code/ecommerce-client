@@ -19,7 +19,7 @@ export const register = async (dispatch, user) => {
   try {
     const res = await puplicRequest.post("/auth/register", user);
     dispatch(loginSuccess(res.data));
-    window.location.replace("/login");
+    // window.location.replace("/login");
     return { success: true };
   } catch (err) {
     const errorMessage = err.response?.data.message || "Registration failed";

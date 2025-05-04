@@ -31,7 +31,7 @@ function App() {
 
           <Route path="/cart" element={!user ? <Register /> : <Cart />} />
           <Route path="/register" element={user ? <Home /> : <Register />} />
-          <Route path="/login" element={user ? <Home /> : <Login />} />
+          {/* <Route path="/login" element={user ? <Home /> : <Login />} /> */}
         </Routes>
       </Router>
     </div>

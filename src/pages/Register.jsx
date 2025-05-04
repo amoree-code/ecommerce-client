@@ -215,7 +215,7 @@ export default function Register() {
       if (!response.success) {
         setError(response.error || "Registration failed. Please try again.");
       }
-      window.location.replace("/login");
+      // window.location.replace("/login");
     } catch (err) {
       setError("An unexpected error occurred. Please try again.");
     } finally {
@@ -304,9 +304,9 @@ export default function Register() {
           </Button>
         </Form>
 
-        <LoginLink to="/login">
+        {/* <LoginLink to="/login">
           Already have an account?<span>Sign In</span>
-        </LoginLink>
+        </LoginLink> */}
       </FormWrapper>
     </Container>
   );
