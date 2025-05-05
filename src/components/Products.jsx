@@ -102,9 +102,7 @@ export default function Products({ cat, filters, sort }) {
         setLoading(true);
         setError(null);
         const res = await axios.get(
-          cat
-            ? `https://ecommerce-api-virid.vercel.app/api/products?category=${cat}`
-            : "https://ecommerce-api-virid.vercel.app/api/products"
+          "https://ecommerce-server-production-e4ae.up.railway.app/api/products"
         );
         setProducts(res.data);
       } catch (err) {
